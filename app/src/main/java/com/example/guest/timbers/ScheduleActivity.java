@@ -39,6 +39,8 @@ public class ScheduleActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(ScheduleActivity.this, TicketsActivity.class);
+        intent.putExtra("opponents", opponents);
+        intent.putExtra("date", date);
         startActivity(intent);
     }
 }
